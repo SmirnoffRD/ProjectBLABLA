@@ -17,23 +17,37 @@ body{
     .footerLinks{
         justify-content: space-around;
     }
+    .logoCont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
+
+@media (max-width: 830px){
+    .footerWrap{
+        display: block!important;
+        overflow: hidden;
+        height: auto!important;
+    }
+    .footer{
+        padding-top: 0!important;
+    }
+}
+
 
 @media (max-width: 575px){
     .footerLinks a{
         display: none;
+    }
+    .logoCont{
+        justify-content: space-between;
     }
 }
 
 @media (min-width: 576px){
     .dropdown{
         display: none;
-    }
-}
-
-@media (max-width: 575px){
-    .btn-default{
-        margin-left: 65%;
     }
 }
 
@@ -53,5 +67,93 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.footer{
+    background-image: url(../pictures/footer.png);
+    height: inherit;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 145px;
+    box-sizing: border-box;
+    background-position-y: bottom;
+    background-position-x: center;
+}
+
+.footerWrap{
+    height: 201px;
+}
+
+
+.footerWrapColumn{
+    height: 100px;
+    float: left;
+    margin-left: 15px;
+}
+
+.columnContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 72px;
+}
+
+.footerWrapColumn a{
+    font-family: "Calibri", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: 2.8px;
+    color: #809ec9;
+}
+
+.footerWrapHeader a{
+    font-family: "Calibri", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.21;
+    letter-spacing: 3.4px;
+    color: #ffffff;
+}
+
+.storeHeader{
+  font-family: "Calibri", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.21;
+  letter-spacing: 1.7px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.shopTable{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 167px;
+}
+
+.shopTable img{
+    width: 190px;
+}
+
+.footerLogo img{
+    height: 80px;
+}
+
+@media (max-width: 1200px){
+    .footerLogo{
+        display: none;
+    }
+    .footerWrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .shopTable{
+        margin-bottom: 40px;
+    }
 }
 
