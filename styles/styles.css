@@ -2,28 +2,6 @@ body{
     background-color: rgb(42, 52, 64)
 }
 
-.footerLinks{
-    display: flex;
-    justify-content: space-between;
-}
-
-/* @media (min-width: 768px) and (max-width: 991px) {
-    .footerLinks{
-
-    }
-} */
-
-@media (max-width: 767px){
-    .footerLinks{
-        justify-content: space-around;
-    }
-    .logoCont{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
 @media (max-width: 830px){
     .footerWrap{
         display: block!important;
@@ -36,22 +14,7 @@ body{
 }
 
 
-@media (max-width: 575px){
-    .footerLinks a{
-        display: none;
-    }
-    .logoCont{
-        justify-content: space-between;
-    }
-}
-
-@media (min-width: 576px){
-    .dropdown{
-        display: none;
-    }
-}
-
-.footerLinks a{
+.logoLinks a{
     font-family: "Calibri", sans-serif;
     font-size: 30px;
     font-weight: bold;
@@ -67,6 +30,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+footer{
+    height: 747px;
 }
 
 .footer{
@@ -157,3 +124,337 @@ body{
     }
 }
 
+.navbar-default{
+    background: none;
+}
+
+.navbar{
+    border: none;
+}
+
+.account{
+    width: 280px;
+    height: 51px;
+    border-radius: 51px;
+    background-color: #873a35;
+    box-shadow: 0 0 21px 0 rgba(255, 255, 255, 0.28);
+    font-family: "Calibri", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff!important;
+    text-shadow: 0 0 20px #000000;
+}
+
+.navbar-nav>li>a{
+    font-family: "Calibri", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    color: #ffffff!important;
+    text-shadow: 0 0 20px #000000;
+}
+
+.header{
+    height: 1011px;
+    background-image: url(../pictures/orig.png);
+    background-position-x: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.header ul{
+    margin-top: 21px;
+}
+
+.navbar-brand{
+    height: auto;
+}
+
+.mappoint{
+    position: absolute;
+    bottom: 134px;
+    right: 104px;
+}
+
+.point{
+    display: block;
+    z-index: 2;
+    position: absolute;
+    left: 99px;
+    bottom: 205px;
+}
+
+@media (max-width: 1173px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in { 
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
+}
+
+.navbar-collapse{
+    border: none;
+}
+
+.welcomeWindow{
+    background-color: rgba(255, 255, 255, 0.69);
+    box-shadow: 0 0 99px 0 rgba(0, 0, 0, 0.16);
+    float: left;
+    margin-left: 64px;
+    width: 816px;
+}
+
+.inputAddon{
+    background-color: #873a35;
+    width: 232px;
+}
+
+.welcomeButton{
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+    height: 72.2px;
+    background-color: #344051;
+    border-radius: 0;
+    font-family: "Calibri", sans-serif;
+    font-size: 46px;
+    font-weight: bold;
+    letter-spacing: 3.3px;
+    color: #e9e9e9;
+}
+
+.welcomeHeader{
+    font-family: "Calibri", sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.22;
+    letter-spacing: 2.3px;
+    color: #344051;
+}
+
+.input-group-addon{
+    color: white;
+    text-align: center;
+}
+
+.inputWelcome{
+    width: 100%;
+}
+
+.formg{
+    margin-left: -7px;
+    margin-right: -7px;
+}
+
+.regLink{
+    float: right;
+    margin-right: 15px;
+    position: relative;
+}
+
+.regLink a{
+    font-family: "Calibri", sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.22;
+    letter-spacing: 2.3px;
+    text-transform: uppercase;
+    color: #873a35;
+}
+
+.regLink:hover a{
+    text-decoration: none;
+}
+
+.arrow{
+    position: absolute;
+    width: 23.8px;
+    height: 23.8px;
+    position: absolute;
+    right: -15px;
+    top: 7px;
+    z-index: 1;
+    background-image: url(../pictures/Path.png);
+}
+
+.welcomeOr {
+    /* чтобы линии не выходили за ширину блока заголовка */
+    overflow: hidden;
+    font-family: "Calibri", sans-serif;
+    font-size: 44px;
+    font-weight: bold;
+    line-height: 1.23;
+    letter-spacing: 3.2px;
+    text-align: center;
+    color: #344051;
+    clear: both;
+}
+
+.welcomeOr:before,
+.welcomeOr:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 100%;
+    height: 3px;
+    background: #344051;
+}
+.welcomeOr:before {
+    margin-left: -100%;
+}
+.welcomeOr:after {
+    margin-right: -100%;
+}
+
+@media (max-width: 930px) {
+    .formg{
+        margin: 0;
+    }
+    .welcomeWindow{
+        margin: 0 auto;
+        float: none;
+        width: 80%;
+    }
+    .regLink:hover .arrow{
+        transform: rotate(45deg);
+    }
+}
+
+@media (min-width: 931px){
+    .regLink:hover .arrow{
+        right: -30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .welcomeWindow{
+        width: 100%;
+    }
+}
+
+@media (max-width: 445px) {
+    .bigLogo{
+        display: none!important;
+    }
+}
+
+@media (min-width: 446px) {
+    .smallLogo{
+        display: none!important;
+    }
+}
+
+@media (max-width: 1330px) {
+    .mappoint{
+        display: none;
+    }
+}
+
+.socialReg {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.socialHeader{
+    width: 128px;
+    height: 50px;
+    font-family: "Calibri", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: 1.4px;
+    text-align: right;
+    color: #344051;
+}
+
+.socialReg a {
+    text-decoration: none;
+    opacity: 0.38;
+    background-color: #344051;
+    line-height: 80px;
+    width: 80px;
+    height: 80px;
+    vertical-align: middle;
+    font-size: 50px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.socialReg a:nth-of-type(n + 3) {
+    order: 1;
+}
+
+.socialReg i {
+    color: #fff;
+}
+
+.socialReg i:hover {
+    color: #abeafa;
+}
+
+.socialRegInside{
+    display: flex;
+    width: 66%;
+    justify-content: space-around;
+}
+
+@media (max-width: 400px){
+    .socialRegInside{
+        width: 100%;
+    }
+    .socialHeader{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.welcomeCheck{
+    clear: both;
+    font-family: "Calibri", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: 2.8px;
+    text-align: left;
+    color: #333f50;
+    padding-left: 43px;
+}
+
+.welcomeCheck a{
+    color: #ae5a57;
+}
