@@ -566,3 +566,73 @@ footer{
     right: -10px;
     top: 10px;
 }
+
+.mainINfoLink:hover .arrow{
+    right: -30px;
+}
+
+@media (max-width:1560px){
+    .mainInfo{
+        flex-wrap: wrap;
+        height: unset;
+    }
+}
+
+@media (max-width:500px){
+    .mainInfo > div{
+        width: 100%;
+        height: unset;
+        box-shadow: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border-top: solid 1px #707070;
+        border-bottom: solid 1px #707070;
+        border-radius: 0;
+    }
+    .mainInfoContent{
+        width: 100%;
+        font-size: 33px;
+        font-weight: bold;
+        line-height: 1;
+        color: #344051;
+    }
+}
+
+.info2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 250px;
+    background-color: #343841;
+    border: solid 1px #707070;
+    flex-wrap: wrap;
+    font-family: "Calibri", sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.22;
+    letter-spacing: 2.3px;
+    text-align: center;
+    color: #fffefd;
+}
+
+@media (max-width: 1234px){
+    .info2{
+        height: unset;
+    }
+}
+
+.partners{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+}
+
+@media (max-width: 640px){
+    .partners img{
+        max-width: 100%;
+    }
+}
