@@ -135,6 +135,18 @@ footer{
     }
 }
 
+.copyFooter{
+    font-family: "Calibri", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: 2.8px;
+    text-align: left;
+    color: #7893bc;
+    clear: both;
+    margin-left: 15px;
+}
+
 .navbar-default{
     background: none;
 }
@@ -563,7 +575,7 @@ footer{
 }
 
 .mainINfoLink .arrow{
-    right: -10px;
+    right: -15px;
     top: 10px;
 }
 
