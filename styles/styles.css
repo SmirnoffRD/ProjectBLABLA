@@ -3,13 +3,12 @@ body{
 }
 
 .border{
-    width: 100vw;
     margin: 0 auto;
 }
 
 @media (min-width: 1920px){
     .border{
-        width: 1920px;
+        width: 1910px;
     }
 }
 
@@ -27,7 +26,7 @@ body{
 
 .logoLinks a{
     font-family: "Calibri", sans-serif;
-    font-size: 30px;
+    font-size: 25px!important;
     font-weight: bold;
     line-height: 1.23;
     color: #fafafa;
@@ -397,6 +396,11 @@ footer{
     }
 }
 
+.bigLogo{
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
 @media (max-width: 445px) {
     .bigLogo{
         width: 230px;
@@ -405,7 +409,10 @@ footer{
 
 @media (max-width: 1330px) {
     .mappoint{
-        display: none;
+        width: 70px;
+    }
+    .mappoint img{
+        width: 100%;
     }
 }
 
@@ -647,4 +654,19 @@ footer{
     .partners img{
         max-width: 100%;
     }
+}
+
+.replies img{
+    width: 100%;
+}
+
+.replies>div{
+    padding-right: 0;
+    padding-left: 0;
+    border: solid 1px #344051;
+    background-color: #ffffff;
+}
+
+.replies{
+
 }
